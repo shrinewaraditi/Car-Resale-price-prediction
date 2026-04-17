@@ -352,7 +352,7 @@ with col_input:
         st.subheader("Basic Details")
         col1, col2 = st.columns(2)
         with col1:
-            name = st.text_input("Car Name (Optional)", placeholder="e.g., Honda City VTEC", help="Display name for record keeping")
+            name = st.text_input("Car Name", placeholder="e.g., Honda City VTEC", help="Display name for record keeping")
             year = st.slider("Manufacturing Year", min_value=1980, max_value=datetime.now().year, value=2020, help="Year when the car was manufactured")
             fuel = st.selectbox("Fuel Type", ['Petrol', 'Diesel', 'CNG', 'LPG', 'Electric', 'Hybrid', 'Other'], help="Type of fuel the vehicle uses")
             transmission = st.selectbox("Transmission", ['Manual', 'Automatic', 'Semi-Auto'], help="Transmission type")
