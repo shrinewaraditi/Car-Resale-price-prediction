@@ -673,8 +673,8 @@ with col_right:
         if ev_flag:
             st.info("⚡ **EV detected** — EV depreciation curve applied. Battery anxiety + limited resale demand cause faster depreciation in India.")
 
-        if not model_loaded:
-            st.warning("⚠️ **Demo mode** — `car_price_model.pkl` and `encoders.pkl` not found. Showing market-curve-only estimate. Place your trained model files alongside this script for full ML predictions.")
+        # if not model_loaded:
+        #     st.warning("⚠️ **Demo mode** — `car_price_model.pkl` and `encoders.pkl` not found. Showing market-curve-only estimate. Place your trained model files alongside this script for full ML predictions.")
 
     else:
         st.markdown("""
